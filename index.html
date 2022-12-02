@@ -11,12 +11,15 @@
 
         <meta name="author" content="Sophie Xeon">
 
+        <link rel="icon" href="./icon.png" type="image/png"/>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
     <div id="wrap">
         <header id="header">
-            <img alt="Sophie logo" id="header-img" src="https://upload.wikimedia.org/wikipedia/en/c/c7/Sophie_product.jpg" >
+            <img alt="Sophie logo" id="header-img" src="https://scontent.faep24-2.fna.fbcdn.net/v/t1.6435-9/161951011_281493603340697_449170970257197291_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGZGQk4I1xj3-7lYkHUDjjGyn6OeuI3AcjKfo564jcByDRIsFNet7cIZutxgaz8JG_lkT-NEiLRiA7Kq3khYRxz&_nc_ohc=XNN0DbFyU4AAX_IZ1n8&_nc_ht=scontent.faep24-2.fna&oh=00_AfCprZ6Zq-hNo0k0_KQGq0xQvNhRsPj20JLRouyssXWnUw&oe=63ADA41E" >
 
             <nav id="nav-bar">
                 <ul id="nav-list">
@@ -72,42 +75,42 @@
                 <div class="card-cont">
                     <div class="card">
                         <h3 class="song-tittle">bipp</h3>
-                        <img src="PRODUCT/bipp.jpg">
+                        <img src="PRODUCT/bipp.jpg" title="bipp" alt="Bipp - a song of Sophie">
                     </div>
                     
                     <div class="card">
                         <h3 class="song-tittle">Elle</h3>
-                        <img src="PRODUCT/elle.jpg">
+                        <img src="PRODUCT/elle.jpg" title="elle" alt="Elle - a song of Sophie">
                     </div>
                     
                     <div class="card">
                         <h3 class="song-tittle">Lemonade</h3>
-                        <img src="PRODUCT/lemonade.jpg">
+                        <img src="PRODUCT/lemonade.jpg" title="Lemonade" alt="Lemonade - a song of Sophie">
                     </div>
                     
                     <div class="card">
                         <h3 class="song-tittle">Hard</h3>
-                        <img src="PRODUCT/hard.jpg">
+                        <img src="PRODUCT/hard.jpg" title="Hard" alt="Hard - a song of Sophie">
                     </div>
                     
                     <div class="card">
                         <h3 class="song-tittle">msmsmsm</h3>
-                        <img src="PRODUCT/msmsmsm.jpg">
+                        <img src="PRODUCT/msmsmsm.jpg" title="msmsmsm" alt="Msmsmsm - a song of Sophie">
                     </div>
                     
                     <div class="card">
                         <h3 class="song-tittle">Vyzee</h3>
-                        <img src="PRODUCT/vyzee.jpg">
+                        <img src="PRODUCT/vyzee.jpg" title="Vyzee" alt="Vyzee - a song of Sophie">
                     </div>
                     
                     <div class="card">
                         <h3 class="song-tittle">L.O.V.E</h3>
-                        <img src="PRODUCT/love.jpg">
+                        <img src="PRODUCT/love.jpg" title="Love" alt="Love - a song of Sophie">
                     </div>
                     
                     <div class="card">
                         <h3 class="song-tittle">Just like we never said goodbye</h3>
-                        <img src="PRODUCT/jlwnsg.jpg">
+                        <img src="PRODUCT/jlwnsg.jpg" title="Just like we never said goodbye"  alt="Just like we never said goodbye - a song of Sophie">
                     </div>
                 </div>
 
@@ -143,47 +146,65 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptate itaque commodi magnam doloremque. Vitae consequatur sunt culpa quo et animi odio excepturi atque ad, nemo repellat eaque maiores iusto?
                 </p>
 
-                </div>
+            </div>
 
 
 
             <div id="select-album">            
                 <h2 id="purchase-tittle">Store</h2>
-                <div class="album">
-                    <h3 class="album-tittle">PRODUCT</h3>
-                    <img src="PRODUCT.png" title="Product pack" class="album-image">
-                    <button class="album-button">SELECT</button>
-                </div>
-
-                <div class="album">
-                    <h3 class="album-tittle">Oil Of Every Pearl's Un-insides</h3>
-                    <img src="OEPU.png" title="Oil Of Every Pearl's Un-insides pack" class="album-image">
-                    <button class="album-button">SELECT</button>
-                </div>
-
-                <div class="album">
-                    <h3 class="album-tittle">Bundle Pack</h3>
-                    <div class="album-image">
-                        <div id="bundle-album-image">
-                                <img id="bundle-image-OEPU" title="bundle pack" src="OEPU.png">
-                                <img id="bundle-image-PRODUCT" title="bundle pack" src="PRODUCT.png">
-                        </div>
+                <div id="album-selection">
+                    <div class="album">
+                        <h3 class="album-tittle">PRODUCT</h3>
+                        <img src="PRODUCT.png"  alt="Product - The Sophie's album, available now for purchase" title="Product pack" class="album-image">
+                        <button class="album-button">SELECT</button>
                     </div>
-                    
-                    <button class="album-button">SELECT</button>
+
+                    <div class="album">
+                        <h3 class="album-tittle">Oil Of Every Pearl's Un-insides</h3>
+                        <img src="OEPU.png" alt="Oil Of Every Pearl's Un-insides - The Sophie's album, available now for purchase" title="Oil Of Every Pearl's Un-insides pack" class="album-image">
+                        <button class="album-button">SELECT</button>
+                    </div>
+
+                    <div class="album">
+                        <h3 class="album-tittle">Bundle Pack</h3>
+                        <div class="album-image">
+                            <div id="bundle-album-image">
+                                    <img id="bundle-image-OEPU" alt="Bundle Pack - The 2 Sophie's albums, available now for purchase" title="bundle pack" src="OEPU.png">
+                                    <img id="bundle-image-PRODUCT" alt="Bundle Pack - The 2 Sophie's albums, available now for purchase" title="bundle pack" src="PRODUCT.png">
+                            </div>
+                        </div>
+                        
+                        <button class="album-button">SELECT</button>
+                    </div>
+
+                </div>
+
+                
+                <div id="form-cont">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                            <input required type="email" id="email" name="email" placeholder="Enter here your email">
+                        
+                            <input type="submit" id="submit" placeholder="Purchase">
+                    </form>
                 </div>
             </div>
 
 
-                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-
-                    <input required type="email" id="email" name="email" placeholder="Enter here your email">
-                    <input type="submit" id="submit" placeholder="Purchase">
-
-                </form>
 
             </div>
         </main>
+
+        <footer id="footer"> 
+            <blockquote>Copyright © 2022 All Rights Reserved</blockquote>
+            
+            <div id="social-media-cont">
+                
+                <a target="_blank" href="https://www.instagram.com/sophie_msmsmsm/?hl=en" class="fa fa-instagram"></a>
+                <a target="_blank" href="https://twitter.com/SOPHIEMSMSMSM" class="fa fa-twitter"></a>
+                <a target="_blank" href="https://www.facebook.com/msmsmsmsophie/" class="fa fa-facebook"></a>
+                
+            </div>
+        </footer>
 
     </div>   
     </body>
