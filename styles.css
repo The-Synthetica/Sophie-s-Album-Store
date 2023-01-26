@@ -21,6 +21,11 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    -ms-overflow-style: none;
+    scrollbar-width: 0px;
+}
+html::-webkit-scrollbar{
+    display: none;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -84,6 +89,7 @@ iframe{
 
 .nav-link-container{
     display: inline-block;
+    position: relative;
     font-size: 0.75rem;
 }
 
@@ -91,6 +97,23 @@ iframe{
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+.nav-link-container::before{
+    content: "";
+    position: absolute;
+
+    clip-path: inset(0 100% 0 0);
+    
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-bottom: 2px white solid;
+    
+    transition: clip-path 0.3s ease-out;
+}
+
+.nav-link-container:hover::before{
+    clip-path: inset(0 0 0 0);
+    transition: clip-path 0.3s ease-in-out;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -481,24 +504,21 @@ iframe{
   }
 
   .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    text-shadow: 3px 3px #0D0A0B;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .fa-facebook {
-    background: #3B5998;
-    color: white;
-    padding-top: 10px;
-    text-shadow: 3px 3px #0D0A0B;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .fa-instagram {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    color: white;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
 
